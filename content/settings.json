@@ -1,0 +1,21 @@
+{
+  "company": {
+    "name": "Althujoori",
+    "tagline": "Real Estate & Trading Co.",
+    "phone": "+974 XXXX XXXX",
+    "whatsapp": "+97400000000",
+    "email": "info@althujoori.qa",
+    "address": "Salwa Road, Doha, Qatar"
+  },
+  "social": {
+    "facebook": "https://facebook.com",
+    "instagram": "https://instagram.com",
+    "linkedin": "https://linkedin.com",
+    "twitter": "",
+    "youtube": ""
+  },
+  "footer": {
+    "description": "A trusted name in Qatar’s real estate market, offering premium commercial and residential rental properties across Doha and beyond.",
+    "copyright": "© 2025 Althujoori Real Estate & Trading Co. All rights reserved."
+  }
+}
