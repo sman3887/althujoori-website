@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: uploads
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - name: homepage
+        label: Homepage Content
+        file: content/homepage.json
+        fields:
+          - { label: Hero Heading, name: hero_heading, widget: string }
+          - { label: Hero Subtext, name: hero_subtext, widget: text }
+          - { label: Button 1 Text, name: btn1, widget: string }
+          - { label: Button 2 Text, name: btn2, widget: string }
