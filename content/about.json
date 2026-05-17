@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "headline": "Built on Trust, Driven by Excellence",
+    "subtext": "For over 15 years, Althujoori Real Estate and Trading Co. has been shaping Qatar’s property landscape.",
+    "stat1_num": "15+",
+    "stat1_lbl": "Years in Qatar",
+    "stat2_num": "120+",
+    "stat2_lbl": "Properties Managed",
+    "stat3_num": "400+",
+    "stat3_lbl": "Satisfied Clients"
+  },
+  "chairman": {
+    "name": "Abdul Hadi Al Sulaiman",
+    "role": "Chairman & Founder",
+    "heading": "A Vision Rooted in Qatar’s Future",
+    "quote": "Qatar’s ambitions are great, and the spaces in which people live and work must reflect that greatness.",
+    "para1": "When I founded Althujoori Real Estate and Trading Co. in 2009, I had a singular vision: to create a company that would not merely facilitate transactions, but build lasting relationships.",
+    "para2": "Over 15 years, we have grown from a small office in Doha to a portfolio spanning over 120 properties across the country.",
+    "para3": "Our success is not measured in numbers alone. It is measured in the businesses that launched from our commercial spaces and the families that built their lives in our villas.",
+    "photo": ""
+  },
+  "mission": {
+    "mission_title": "To Deliver Premium Spaces with Purpose",
+    "mission_body": "To provide businesses and families across Qatar with premium, well-managed properties delivered with transparency, care, and an unwavering commitment to long-term relationships.",
+    "vision_title": "To Be Qatar’s Most Trusted Real Estate Partner",
+    "vision_body": "To be recognised across Qatar as the most trusted, client-centred real estate company — a partner that clients return to not because they must, but because they choose to."
+  },
+  "values": [
+    "Integrity in every transaction",
+    "Quality held to the highest standard",
+    "Partnership over transactional thinking",
+    "Excellence in service and after-care",
+    "Respect for every client, every time"
+  ],
+  "why_us": [
+    {
+      "number": "01",
+      "title": "15+ Years of Local Expertise",
+      "description": "We know Qatar’s property market inside out."
+    },
+    {
+      "number": "02",
+      "title": "Transparent, Honest Dealings",
+      "description": "No hidden fees. No surprises. Every price and term is communicated clearly."
+    },
+    {
+      "number": "03",
+      "title": "Dedicated After-Rental Support",
+      "description": "Our relationship doesn’t end when you sign the lease."
+    },
+    {
+      "number": "04",
+      "title": "Diverse, Premium Portfolio",
+      "description": "From boutique offices to luxury villas — we serve businesses and families of every profile."
+    },
+    {
+      "number": "05",
+      "title": "Fast, Responsive Team",
+      "description": "We respond to every inquiry within 24 hours. Viewings arranged within 48 hours."
+    },
+    {
+      "number": "06",
+      "title": "Long-Term Partnerships",
+      "description": "Over 70% of our tenants renew their lease with us."
+    }
+  ],
+  "stats": {
+    "s1v": "120+",
+    "s1l": "Properties Managed",
+    "s2v": "400+",
+    "s2l": "Satisfied Clients",
+    "s3v": "70%",
+    "s3l": "Tenant Renewal Rate",
+    "s4v": "15+",
+    "s4l": "Years of Excellence"
+  }
+}

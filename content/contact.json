@@ -1,0 +1,43 @@
+{
+  "details": {
+    "phone": "+974 XXXX XXXX",
+    "whatsapp": "+97400000000",
+    "email": "info@althujoori.qa",
+    "address": "Salwa Road, Doha, Qatar",
+    "map_url": ""
+  },
+  "hours": [
+    {
+      "days": "Saturday – Thursday",
+      "hours": "8:00 AM – 1:00 PM  |   4:00 PM – 8:00 PM",
+      "closed": false
+    },
+    {
+      "days": "Friday",
+      "hours": "",
+      "closed": true
+    }
+  ],
+  "faq": [
+    {
+      "question": "How quickly can I move into a property?",
+      "answer": "Most available properties are move-in ready immediately upon signing the lease and completing payment."
+    },
+    {
+      "question": "What documents are required to rent?",
+      "answer": "For commercial: Trade License (CR), company letterhead, and Qatar ID. For residential: a valid Qatar ID or passport."
+    },
+    {
+      "question": "Do you offer short-term or flexible lease options?",
+      "answer": "Yes. While most of our leases are annual, we do offer flexible arrangements for certain properties."
+    },
+    {
+      "question": "Can I schedule a property viewing before committing?",
+      "answer": "Absolutely — we encourage all potential tenants to visit in person. Fill in the contact form or message us on WhatsApp."
+    },
+    {
+      "question": "Are utilities included in the rental price?",
+      "answer": "This varies by property. Some units include certain utilities in the monthly rent, while others are exclusive of utilities."
+    }
+  ]
+}

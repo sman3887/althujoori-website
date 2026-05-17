@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "line1": "Spaces That",
+    "gold_word": "Elevate",
+    "line2": "Your Vision",
+    "subtext": "Althujoori offers a curated portfolio of premium commercial spaces, office suites, and private villas — crafted to meet every professional and residential aspiration.",
+    "btn1": "View Properties →",
+    "btn2": "Contact Us",
+    "stat1_num": "120+",
+    "stat1_lbl": "Properties",
+    "stat2_num": "15+",
+    "stat2_lbl": "Years Active",
+    "stat3_num": "400+",
+    "stat3_lbl": "Happy Clients"
+  },
+  "categories": {
+    "eyebrow": "Browse By Type",
+    "title": "Our Property Categories",
+    "cat1_name": "Office Spaces",
+    "cat1_count": "24 Available",
+    "cat2_name": "Commercial Units",
+    "cat2_count": "18 Available",
+    "cat3_name": "Accommodation Villas",
+    "cat3_count": "32 Available",
+    "cat4_name": "Other Rentals",
+    "cat4_count": "41 Available"
+  },
+  "about_strip": {
+    "eyebrow": "Our Story",
+    "heading1": "Rooted in Qatar,",
+    "heading2": "Built on Trust",
+    "body": "Althujoori Real Estate and Trading Co. has been at the forefront of Qatar’s property landscape for over a decade — providing businesses and families with premium spaces that inspire growth and comfort.",
+    "btn": "Learn More About Us →"
+  },
+  "cta": {
+    "heading": "Ready to Find Your Perfect Space?",
+    "subtext": "Browse our full portfolio or speak directly with our leasing team for a personalised tour.",
+    "btn1": "Browse Properties",
+    "btn2": "Contact Us"
+  },
+  "newsletter": {
+    "heading": "Get New Properties Delivered to Your Inbox",
+    "subtext": "Subscribe and be the first to hear about newly available properties, market insights, and exclusive listings.",
+    "btn": "Subscribe"
+  }
+}
