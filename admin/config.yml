@@ -1,0 +1,259 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+site_url: https://althujoori-website.netlify.app
+
+collections:
+
+  # ─── PROPERTIES ────────────────────────────────────────────────
+  - name: properties
+    label: Properties
+    label_singular: Property
+    folder: content/properties
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Property Name, name: title, widget: string }
+      - label: Property Type
+        name: type
+        widget: select
+        options:
+          - Office Space
+          - Commercial Unit
+          - Accommodation Villa
+          - Warehouse
+          - Retail Space
+          - Other
+      - { label: Location, name: location, widget: string, hint: "e.g. West Bay, Doha" }
+      - { label: Monthly Rent (QAR), name: price, widget: number }
+      - { label: Size (Sq.m), name: size, widget: number }
+      - { label: Rooms / Offices / Beds, name: rooms, widget: string }
+      - { label: Parking Spaces, name: parking, widget: string }
+      - { label: Floor, name: floor, widget: string, required: false }
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - Vacant
+          - Rented
+          - Maintenance
+          - Inactive
+        default: Vacant
+      - { label: Show on Website, name: visible, widget: boolean, default: true }
+      - { label: Feature on Homepage, name: featured, widget: boolean, default: false }
+      - { label: Property Photo, name: image, widget: image, required: false }
+      - { label: Description, name: description, widget: text }
+      - label: Features & Amenities
+        name: features
+        widget: list
+        field:
+          label: Feature
+          name: feature
+          widget: string
+      - { label: Google Maps Embed URL, name: map_url, widget: string, required: false }
+
+  # ─── HOMEPAGE ──────────────────────────────────────────────────
+  - name: pages
+    label: Pages
+    files:
+
+      - name: homepage
+        label: Homepage
+        file: content/homepage.json
+        fields:
+          - label: Hero Section
+            name: hero
+            widget: object
+            fields:
+              - { label: Headline Line 1, name: line1, widget: string, default: "Spaces That" }
+              - { label: Gold Italic Word, name: gold_word, widget: string, default: "Elevate" }
+              - { label: Headline Line 2, name: line2, widget: string, default: "Your Vision" }
+              - { label: Subheading, name: subtext, widget: text }
+              - { label: Button 1 Text, name: btn1, widget: string, default: "View Properties →" }
+              - { label: Button 2 Text, name: btn2, widget: string, default: "Contact Us" }
+              - { label: Stat 1 — Number, name: stat1_num, widget: string, default: "120+" }
+              - { label: Stat 1 — Label, name: stat1_lbl, widget: string, default: "Properties" }
+              - { label: Stat 2 — Number, name: stat2_num, widget: string, default: "15+" }
+              - { label: Stat 2 — Label, name: stat2_lbl, widget: string, default: "Years Active" }
+              - { label: Stat 3 — Number, name: stat3_num, widget: string, default: "400+" }
+              - { label: Stat 3 — Label, name: stat3_lbl, widget: string, default: "Happy Clients" }
+
+          - label: Property Categories Section
+            name: categories
+            widget: object
+            fields:
+              - { label: Section Eyebrow, name: eyebrow, widget: string, default: "Browse By Type" }
+              - { label: Section Title, name: title, widget: string, default: "Our Property Categories" }
+              - { label: Category 1 — Name, name: cat1_name, widget: string, default: "Office Spaces" }
+              - { label: Category 1 — Count, name: cat1_count, widget: string, default: "24 Available" }
+              - { label: Category 2 — Name, name: cat2_name, widget: string, default: "Commercial Units" }
+              - { label: Category 2 — Count, name: cat2_count, widget: string, default: "18 Available" }
+              - { label: Category 3 — Name, name: cat3_name, widget: string, default: "Accommodation Villas" }
+              - { label: Category 3 — Count, name: cat3_count, widget: string, default: "32 Available" }
+              - { label: Category 4 — Name, name: cat4_name, widget: string, default: "Other Rentals" }
+              - { label: Category 4 — Count, name: cat4_count, widget: string, default: "41 Available" }
+
+          - label: About Strip
+            name: about_strip
+            widget: object
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string, default: "Our Story" }
+              - { label: Heading Line 1, name: heading1, widget: string, default: "Rooted in Qatar," }
+              - { label: Heading Line 2, name: heading2, widget: string, default: "Built on Trust" }
+              - { label: Body Text, name: body, widget: text }
+              - { label: Button Text, name: btn, widget: string, default: "Learn More About Us →" }
+
+          - label: Call-to-Action Banner
+            name: cta
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Subtext, name: subtext, widget: text }
+              - { label: Button 1 Text, name: btn1, widget: string, default: "Browse Properties" }
+              - { label: Button 2 Text, name: btn2, widget: string, default: "Contact Us" }
+
+          - label: Newsletter Section
+            name: newsletter
+            widget: object
+            fields:
+              - { label: Heading, name: heading, widget: string, default: "Get New Properties Delivered to Your Inbox" }
+              - { label: Subtext, name: subtext, widget: text }
+              - { label: Button Text, name: btn, widget: string, default: "Subscribe" }
+
+      # ─── ABOUT PAGE ──────────────────────────────────────────
+      - name: about
+        label: About Us Page
+        file: content/about.json
+        fields:
+          - label: Page Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string, default: "Built on Trust, Driven by Excellence" }
+              - { label: Subheading, name: subtext, widget: text }
+              - { label: Stat 1 — Number, name: stat1_num, widget: string, default: "15+" }
+              - { label: Stat 1 — Label, name: stat1_lbl, widget: string, default: "Years in Qatar" }
+              - { label: Stat 2 — Number, name: stat2_num, widget: string, default: "120+" }
+              - { label: Stat 2 — Label, name: stat2_lbl, widget: string, default: "Properties Managed" }
+              - { label: Stat 3 — Number, name: stat3_num, widget: string, default: "400+" }
+              - { label: Stat 3 — Label, name: stat3_lbl, widget: string, default: "Satisfied Clients" }
+
+          - label: Chairman's Message
+            name: chairman
+            widget: object
+            fields:
+              - { label: Chairman Full Name, name: name, widget: string, default: "Abdul Hadi Al Sulaiman" }
+              - { label: Title / Role, name: role, widget: string, default: "Chairman & Founder" }
+              - { label: Section Heading, name: heading, widget: string }
+              - { label: Gold Highlight Quote, name: quote, widget: text }
+              - { label: Message Paragraph 1, name: para1, widget: text }
+              - { label: Message Paragraph 2, name: para2, widget: text }
+              - { label: Message Paragraph 3, name: para3, widget: text }
+              - { label: Chairman Portrait Photo, name: photo, widget: image, required: false }
+
+          - label: Mission Statement
+            name: mission
+            widget: object
+            fields:
+              - { label: Mission Title, name: mission_title, widget: string }
+              - { label: Mission Body, name: mission_body, widget: text }
+              - { label: Vision Title, name: vision_title, widget: string }
+              - { label: Vision Body, name: vision_body, widget: text }
+
+          - label: Company Values
+            name: values
+            widget: list
+            fields:
+              - { label: Value, name: value, widget: string }
+
+          - label: Why Choose Us
+            name: why_us
+            widget: list
+            fields:
+              - { label: Number, name: number, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+
+          - label: Awards & Stats
+            name: stats
+            widget: object
+            fields:
+              - { label: Stat 1 — Value, name: s1v, widget: string, default: "120+" }
+              - { label: Stat 1 — Label, name: s1l, widget: string, default: "Properties Managed" }
+              - { label: Stat 2 — Value, name: s2v, widget: string, default: "400+" }
+              - { label: Stat 2 — Label, name: s2l, widget: string, default: "Satisfied Clients" }
+              - { label: Stat 3 — Value, name: s3v, widget: string, default: "70%" }
+              - { label: Stat 3 — Label, name: s3l, widget: string, default: "Tenant Renewal Rate" }
+              - { label: Stat 4 — Value, name: s4v, widget: string, default: "15+" }
+              - { label: Stat 4 — Label, name: s4l, widget: string, default: "Years of Excellence" }
+
+      # ─── CONTACT PAGE ────────────────────────────────────────
+      - name: contact
+        label: Contact Page
+        file: content/contact.json
+        fields:
+          - label: Contact Details
+            name: details
+            widget: object
+            fields:
+              - { label: Phone Number, name: phone, widget: string, default: "+974 XXXX XXXX" }
+              - { label: WhatsApp Number, name: whatsapp, widget: string, default: "+974 XXXX XXXX", hint: "Include country code e.g. +97412345678" }
+              - { label: Email Address, name: email, widget: string, default: "info@althujoori.qa" }
+              - { label: Office Address, name: address, widget: string, default: "Salwa Road, Doha, Qatar" }
+              - { label: Google Maps Embed URL, name: map_url, widget: string, required: false }
+
+          - label: Office Hours
+            name: hours
+            widget: list
+            fields:
+              - { label: Days, name: days, widget: string, hint: "e.g. Saturday – Thursday" }
+              - { label: Hours, name: hours, widget: string, hint: "e.g. 8:00 AM – 1:00 PM | 4:00 PM – 8:00 PM" }
+              - label: Closed
+                name: closed
+                widget: boolean
+                default: false
+
+          - label: FAQ Questions
+            name: faq
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+
+      # ─── SITE SETTINGS ───────────────────────────────────────
+      - name: settings
+        label: Site Settings
+        file: content/settings.json
+        fields:
+          - label: Company Info
+            name: company
+            widget: object
+            fields:
+              - { label: Company Name, name: name, widget: string, default: "Althujoori" }
+              - { label: Tagline, name: tagline, widget: string, default: "Real Estate & Trading Co." }
+              - { label: Phone, name: phone, widget: string }
+              - { label: WhatsApp, name: whatsapp, widget: string }
+              - { label: Email, name: email, widget: string }
+              - { label: Address, name: address, widget: string }
+
+          - label: Social Media Links
+            name: social
+            widget: object
+            fields:
+              - { label: Facebook URL, name: facebook, widget: string, required: false }
+              - { label: Instagram URL, name: instagram, widget: string, required: false }
+              - { label: LinkedIn URL, name: linkedin, widget: string, required: false }
+              - { label: Twitter / X URL, name: twitter, widget: string, required: false }
+              - { label: YouTube URL, name: youtube, widget: string, required: false }
+
+          - label: Footer
+            name: footer
+            widget: object
+            fields:
+              - { label: Footer Description, name: description, widget: text }
+              - { label: Copyright Text, name: copyright, widget: string, default: "© 2025 Althujoori Real Estate & Trading Co. All rights reserved." }
